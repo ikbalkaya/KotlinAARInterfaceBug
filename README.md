@@ -10,11 +10,11 @@ There is another class that implements that nested interface. Check SomeLibraryC
 
 When we want to use this library in a Java based Android project, depending on how we import this library following
 code will seem problematic or not.
- (Add code ticks here)
+ ```
 final SomeLibraryClassThatUsesNestedInterfaceAsParam instanceIWantToUse =
                 new SomeLibraryClassThatUsesNestedInterfaceAsParam();
         instanceIWantToUse.doSomethingWith(new NestedImplementation());
-
+```
 
 * When the library  is declared as a project dependency (implementation files('libs/my_kotlin_lib-debug
 .aar')) Android Studio won't show any issue for this code
@@ -23,13 +23,13 @@ final SomeLibraryClassThatUsesNestedInterfaceAsParam instanceIWantToUse =
  However there is no issue building and running the app.issue
  To see it yourself run the following command:
 
-  ./gradlew appwithaardependencies:build
+ ` ./gradlew appwithaardependencies:build`
 
   Expectation :Android Studio shouldn't show this as an issue:
 
 
   Android Studio info
-
+`
   Android Studio Chipmunk | 2021.2.1 Patch 2
   Build #AI-212.5712.43.2112.8815526, built on July 10, 2022
   Runtime version: 11.0.12+0-b1504.28-7817840 x86_64
@@ -40,4 +40,5 @@ final SomeLibraryClassThatUsesNestedInterfaceAsParam instanceIWantToUse =
   Cores: 16
   Registry: external.system.auto.import.disabled=true, ide.instant.shutdown=false
   Non-Bundled Plugins: Dart (212.5744), org.intellij.plugins.markdown (212.5457.16), com.thoughtworks.gauge (212.4746.52), org.jetbrains.kotlin (212-1.7.10-release-333-AS5457.46), io.flutter (70.0.2)
+  `
 
