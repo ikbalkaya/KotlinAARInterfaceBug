@@ -21,7 +21,7 @@ final SomeLibraryClassThatUsesNestedInterfaceAsParam instanceIWantToUse =
 * When the library is declared as an AAR dependency (implementation files('libs/my_kotlin_lib-debug.aar'))
  Android Studio will show an error like below.
 
- ![Screenshot](/as_schreenshot.png)
+ ![Screenshot](https://github.com/ikbalkaya/KotlinAARInterfaceBug/blob/main/as_screenshot.png)
 
  However there is no issue building and running the app.issue
  To see it yourself run the following command:
