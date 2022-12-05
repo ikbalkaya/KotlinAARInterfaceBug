@@ -23,7 +23,7 @@ final SomeLibraryClassThatUsesNestedInterfaceAsParam instanceIWantToUse =
 
  ![Screenshot](https://github.com/ikbalkaya/KotlinAARInterfaceBug/blob/main/as_screenshot.png)
 
- However there is no issue building and running the app.issue
+ However there is no issue building and running the app.
  To see it yourself run the following command:
 
  ` ./gradlew appwithaardependencies:build`
